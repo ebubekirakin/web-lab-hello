@@ -25,4 +25,5 @@
 25 Tarayicida http :// localhost :5173 adresini ac.
 26
 27 ## Ekran Goruntusu
-28 ()
+28 (<img width="1883" height="1001" alt="image" src="https://github.com/user-attachments/assets/81c98bc0-9df3-45e4-8959-1aa2493154bb" />
+)
