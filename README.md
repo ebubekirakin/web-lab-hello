@@ -1,29 +1,23 @@
-# Web LAB -1 - Hello Project
-2
-3 ## Hakkinda
-4 Bu proje , Web Tasarimi ve Programlama dersi LAB -1 kapsaminda
-5 Vite + React + TypeScript kullanilarak olusturulmustur.
-6
-7 ## Gelistirici
-8 - **Ad Soyad :** [Ebubekir AKIN]
-9 - ** Ogrenci No:** [230541132]
-10
-11 ## Kullanilan Teknolojiler
-12 - React 18
-13 - TypeScript
-14 - Vite
-15
-16 ## Kurulum
-17 ```bash
-18 npm install
-19 ```
-20
-21 ## Calistirma
-22 ```bash
-23 npm run dev
-24 ```
-25 Tarayicida http :// localhost :5173 adresini ac.
-26
-27 ## Ekran Goruntusu
-28 (<img width="1883" height="1001" alt="image" src="https://github.com/user-attachments/assets/81c98bc0-9df3-45e4-8959-1aa2493154bb" />
-)
+# Web LAB - Kişisel Portföy Projesi
+
+## Hakkında
+[cite_start]Bu proje, Web Tasarımı ve Programlama dersi LAB-1 ve LAB-2 kapsamında; semantik HTML5, erişilebilirlik (a11y) kuralları ve modern form yapılarını uygulamak amacıyla Vite + React + TypeScript kullanılarak oluşturulmuştur[cite: 3, 15, 17, 18].
+
+## Geliştirici
+- [cite_start]**Ad Soyad:** Ebubekir AKIN [cite: 8]
+- [cite_start]**Öğrenci No:** 230541132 [cite: 9]
+
+## Kullanılan Teknolojiler
+- [cite_start]**React 18** [cite: 12]
+- [cite_start]**TypeScript** [cite: 13]
+- [cite_start]**Vite** [cite: 14]
+- [cite_start]**Semantik HTML5:** header, nav, main, section, footer [cite: 20]
+- [cite_start]**Erişilebilirlik (a11y):** ARIA öznitelikleri, Skip Navigation, 100/100 Lighthouse skoru [cite: 21, 25]
+
+## Ekran Goruntusu
+(<img width="1883" height="1001" alt="image" src="https://github.com/user-attachments/assets/81c98bc0-9df3-45e4-8959-1aa2493154bb" />)
+## Kurulum
+```bash
+npm install
+
+
