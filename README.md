@@ -14,8 +14,6 @@
 - [cite_start]**Semantik HTML5:** header, nav, main, section, footer [cite: 20]
 - [cite_start]**Erişilebilirlik (a11y):** ARIA öznitelikleri, Skip Navigation, 100/100 Lighthouse skoru [cite: 21, 25]
 
-## Ekran Goruntusu
-(<img width="1883" height="1001" alt="image" src="https://github.com/user-attachments/assets/81c98bc0-9df3-45e4-8959-1aa2493154bb" />)
 ## Kurulum
 ```bash
 npm install
