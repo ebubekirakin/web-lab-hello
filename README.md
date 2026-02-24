@@ -1,21 +1,23 @@
 # Web LAB - Kişisel Portföy Projesi
 
 ## Hakkında
-[cite_start]Bu proje, Web Tasarımı ve Programlama dersi LAB-1 ve LAB-2 kapsamında; semantik HTML5, erişilebilirlik (a11y) kuralları ve modern form yapılarını uygulamak amacıyla Vite + React + TypeScript kullanılarak oluşturulmuştur[cite: 3, 15, 17, 18].
+Bu proje, Web Tasarımı ve Programlama dersi LAB-1 ve LAB-2 kapsamında; semantik HTML5, erişilebilirlik (a11y) kuralları ve modern form yapılarını uygulamak amacıyla Vite + React + TypeScript kullanılarak oluşturulmuştur.
 
 ## Geliştirici
-- [cite_start]**Ad Soyad:** Ebubekir AKIN [cite: 8]
-- [cite_start]**Öğrenci No:** 230541132 [cite: 9]
+- **Ad Soyad:** Ebubekir AKIN
+- **Öğrenci No:** 230541132
 
 ## Kullanılan Teknolojiler
-- [cite_start]**React 18** [cite: 12]
-- [cite_start]**TypeScript** [cite: 13]
-- [cite_start]**Vite** [cite: 14]
-- [cite_start]**Semantik HTML5:** header, nav, main, section, footer [cite: 20]
-- [cite_start]**Erişilebilirlik (a11y):** ARIA öznitelikleri, Skip Navigation, 100/100 Lighthouse skoru [cite: 21, 25]
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **Semantik HTML5:** header, nav, main, section, footer
+- **Erişilebilirlik (a11y):** ARIA öznitelikleri, Skip Navigation, 100/100 Lighthouse skoru
+
+## Ekran Goruntusu
+
+(<img width="1883" height="1001" alt="image" src="https://github.com/user-attachments/assets/81c98bc0-9df3-45e4-8959-1aa2493154bb" />)
 
 ## Kurulum
 ```bash
 npm install
-
-
