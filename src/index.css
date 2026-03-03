@@ -1,4 +1,5 @@
-/* Genel sifirlama */
+@import './styles/tokens.css';
+/* --- GENEL AYARLAR VE YAPI --- */
 * { 
   margin: 0; 
   padding: 0; 
@@ -6,63 +7,195 @@
 }
 
 body { 
-  font-family: system-ui, sans-serif; 
+  font-family: 'Segoe UI', system-ui, sans-serif; 
   line-height: 1.6; 
-  padding: 20px; /* Kenarlardan biraz bosluk verelim, ekrana yapismasin */
+  background-color: #f3f4f6; 
+  color: #1f2937; 
+  font-size: var(--text-base); /* YENI EKLENEN SATIR */
 }
 
-/* Skip link: normalde gizli, Tab ile gorunur */
+/* Sitenin icerigini ortalayip genisligini sinirlayalim (Daha derli toplu durur) */
+main, header, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- UST KISIM (HEADER) --- */
+header {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); 
+  color: white;
+  border-radius: 0 0 16px 16px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow-md);
+  
+  /* Flexbox Sihri Burada Basliyor */
+  display: flex;
+  justify-content: space-between; /* Adimiz sola, menu saga yaslansin */
+  align-items: center; /* Dikeyde tam ortalansinlar */
+  padding: var(--space-md) var(--space-xl); /* Bosluklari tokenlardan aliyoruz */
+}
+
+header h1 {
+  /* font-size: 2.5rem; silindi, yerine alttaki eklendi */
+  font-size: var(--text-3xl);
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+/* Navigasyon cubugu (Yan yana dizilim) */
+nav ul {
+  display: flex;
+  list-style: none; /* Madde isaretlerini (noktalari) kaldirir */
+  gap: var(--space-md); /* Linkler arasina token ile bosluk ekler */
+  padding: 0;
+  margin: 0;
+}
+
+header nav a {
+  color: #e0e7ff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* --- ALT BOLUM BASLIKLARI --- */
+h2 {
+  color: #1e3a8a;
+  border-bottom: 3px solid #bfdbfe;
+  padding-bottom: 8px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: var(--text-2xl); /* YENI EKLENEN SATIR */
+}
+
+/* --- PROJE KARTLARI --- */
+article {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Fareyle ustune gelince kart havaya kalksin */
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+}
+
+article h3 {
+ color: #2563eb;
+  margin-bottom: 10px;
+  /* font-size: 1.3rem; silindi, yerine alttaki eklendi */
+  font-size: var(--text-xl);
+}
+
+/* --- İLETİSİM FORMU --- */
+section#iletisim {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.form-group { 
+  margin-bottom: 1.5rem; 
+}
+
+label { 
+  display: block; 
+  margin-bottom: 0.5rem; 
+  font-weight: 600;
+  color: #374151;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- ALT BILGI (FOOTER) --- */
+footer {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid #e5e7eb;
+}
+
+/* =========================================================
+   ERISILEBILIRLIK (A11Y) KODLARI - BURAYA DOKUNMUYORUZ! 
+   ========================================================= */
 .skip-link {
   position: absolute;
-  top: -100px; /* Ekranda gorunmeyecek kadar yukariya sakla */
+  top: -100px;
   left: 0;
   background: #1e3a8a;
   color: white;
   padding: 8px 16px;
   z-index: 100;
+  border-radius: 0 0 8px 0;
 }
 
 .skip-link:focus { 
-  top: 0; /* Sadece Tab ile odaklanildiginda asagi indir ve goster */
+  top: 0; 
 }
 
-/* Focus gostergesi -- ASLA kaldirma */
 :focus { 
-  outline: 2px solid #2563eb; 
-  outline-offset: 2px; 
-}
-
-/* Form stilleri */
-.form-group { 
-  margin-bottom: 1rem; 
-}
-
-label { 
-  display: block; 
-  margin-bottom: 0.25rem; 
-  font-weight: bold;
-}
-
-input, textarea, select {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  outline: 3px solid #f59e0b; /* Mavi arka planda da gorunsun diye turuncu odak rengi */
+  outline-offset: 3px; 
 }
 
 .error-msg { 
-  color: red; 
-  font-size: 0.85rem; 
+  color: #ef4444; 
+  font-size: 0.9rem; 
+  font-weight: 600;
+  display: block;
+  margin-top: 5px;
 }
 
-/* Ufak bir dokunus: Proje kartlarini ayiralim */
-article {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #eee;
-  border-radius: 8px;
-}
-
-section {
-  margin-bottom: 40px;
+/* Mobilde dikey yigin (Ekran 639px ve altindayken calisir) */
+@media (max-width: 639px) {
+  header {
+    flex-direction: column; /* Mobilde Adimiz ve Menu ust uste gelsin */
+    gap: var(--space-md);
+  }
+  
+  nav ul {
+    flex-direction: column; /* Linkler alt alta siralansin */
+    align-items: center;
+  }
 }
