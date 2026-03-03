@@ -14,5 +14,8 @@ Bu proje, Web Tasarımı ve Programlama dersi LAB-2 kapsamında, semantik HTML5 
 - React & TypeScript & Vite
 
 ## Kurulum
-```bash
 npm install
+
+## Çalıştırma
+npm run dev
+
