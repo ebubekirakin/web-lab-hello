@@ -21,29 +21,35 @@ function App() {
         {/* HAKKIMDA BÖLÜMÜ */}
         <section id="hakkimda">
           <h2>Hakkımda</h2>
-          <figure>
-            <img src="/profil.jpg" alt="vesikalık" />
-            <figcaption>Ebubekir Akın</figcaption>
-          </figure>
-          <p>
-            Merhaba, ben Ebubekir Akın. Fırat Üniversitesi Yazılım Mühendisliği öğrencisiyim. 
-          </p>
-          <p>
-            Boş zamanlarımda Beşiktaş maçlarını takip etmeyi, kafa dağıtmak için oyun oynamayı ve dizi izlemeyi seviyorum.
-          </p>
           
-          {/* YENİ: Flexbox ile Modern Teknolojiler Listesi (Toolbar) */}
-          <h3>Kullandığım Teknolojiler</h3>
-          <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>Vite</li>
-            <li>Python</li>
-            <li>Git</li>
-          </ul>
+          {/* YENİ: İçeriği saran Flex kutusu */}
+          <div className="about-content">
+            <figure>
+              <img src="/profil.jpg" alt="Ebubekir Akın'ın vesikalık fotoğrafı" />
+              <figcaption>Ebubekir Akın</figcaption>
+            </figure>
+            
+            <div className="about-text">
+              <p>
+                Merhaba, ben Ebubekir Akın. Fırat Üniversitesi Yazılım Mühendisliği öğrencisiyim. 
+              </p>
+              <p>
+                Boş zamanlarımda Beşiktaş maçlarını takip etmeyi, kafa dağıtmak için oyun oynamayı ve dizi izlemeyi seviyorum.
+              </p>
+              
+              <h3>Kullandığım Teknolojiler</h3>
+              <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+                <li>Python</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
 {/* PROJELER BÖLÜMÜ */}
