@@ -5,7 +5,7 @@ function App() {
       <a href="#main-content" className="skip-link">Ana içeriğe atla</a>
 
       {/* HEADER VE NAVİGASYON */}
-      <header>
+<header>
         <h1>Ebubekir Akın - Kişisel Portföy</h1>
         <nav aria-label="Ana navigasyon">
           <ul>
@@ -22,47 +22,65 @@ function App() {
         <section id="hakkimda">
           <h2>Hakkımda</h2>
           <figure>
-            <img src="/profil.jpg" alt="Ebubekir Akın'ın vesikalık fotoğrafı" />
+            <img src="/profil.jpg" alt="vesikalık" />
             <figcaption>Ebubekir Akın</figcaption>
           </figure>
           <p>
             Merhaba, ben Ebubekir Akın. Fırat Üniversitesi Yazılım Mühendisliği öğrencisiyim. 
-            Siber Vatan ve MTA Yapay Zeka Uzmanlık eğitimlerinde kendimi geliştiriyorum.
           </p>
           <p>
-            Boş zamanlarımda Beşiktaş maçlarını takip etmeyi, kafa dağıtmak için RDR2 oynamayı ve Game of Thrones izlemeyi seviyorum.
+            Boş zamanlarımda Beşiktaş maçlarını takip etmeyi, kafa dağıtmak için oyun oynamayı ve dizi izlemeyi seviyorum.
           </p>
           
-          {/* YENİ: Teknolojiler Listesi */}
+          {/* YENİ: Flexbox ile Modern Teknolojiler Listesi (Toolbar) */}
           <h3>Kullandığım Teknolojiler</h3>
-          <ul>
-            <li>HTML5 (Semantik & Erişilebilir)</li>
+          <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+            <li>HTML5</li>
             <li>CSS3</li>
-            <li>JavaScript & TypeScript</li>
-            <li>React & Vite</li>
-            <li>Python (Yapay Zeka Temelleri)</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Vite</li>
+            <li>Python</li>
+            <li>Git</li>
           </ul>
         </section>
 
-        {/* PROJELERİM BÖLÜMÜ */}
+{/* PROJELER BÖLÜMÜ */}
         <section id="projeler">
           <h2>Projelerim</h2>
           
-          <article>
-            <h3>Kişisel Portföy Sitem</h3>
-            <img src="/proje-portfoy.jpg" alt="Kişisel web sitemin karanlık temalı ana sayfası" />
-            <p>React, TypeScript ve Vite kullanarak geliştirdiğim, semantik HTML ve modern web standartlarına uygun kişisel web sayfam.</p>
-            {/* YENİ: Proje Teknolojileri */}
-            <p><strong>Teknolojiler:</strong> React, TypeScript, Semantik HTML, a11y Formlar</p>
-          </article>
-          
-          <article>
-            <h3>Yapay Zeka Analiz Aracı</h3>
-            <img src="/proje-yz.jpg" alt="Python ile yazılmış veri analizi arayüzü" />
-            <p>Eğitimlerim kapsamında geliştirdiğim, veri setlerini inceleyen temel düzey bir Python projesi.</p>
-            {/* YENİ: Proje Teknolojileri */}
-            <p><strong>Teknolojiler:</strong> Python, Veri Analizi Kütüphaneleri</p>
-          </article>
+          {/* İŞTE SİHİRLİ GRID KUTUMUZ */}
+          <div className="project-grid">
+            
+            {/* Proje 1 */}
+            <article className="project-card">
+              <img src="/proje1.jpg" alt="Kişisel web sitemin karanlık temalı ana sayfası" />
+              <h3>Kişisel Portföy Sitem</h3>
+              <p>React, TypeScript ve Vite kullanarak geliştirdiğim, semantik HTML ve modern web standartlarına uygun kişisel web sayfam.</p>
+              
+              {/* Kart İçi Yetenek Etiketleri */}
+              <ul className="skill-tags">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+              </ul>
+            </article>
+
+            {/* Proje 2 */}
+            <article className="project-card">
+              <img src="/proje2.jpg" alt="Python ile yazılmış veri analizi arayüzü" />
+              <h3>Yapay Zeka Analiz Aracı</h3>
+              <p>Eğitimlerim kapsamında geliştirdiğim, veri setlerini inceleyen temel düzey bir Python projesi.</p>
+              
+              {/* Kart İçi Yetenek Etiketleri */}
+              <ul className="skill-tags">
+                <li>Python</li>
+                <li>Veri Analizi</li>
+              </ul>
+            </article>
+
+          </div>
         </section>
 
         {/* İLETİŞİM BÖLÜMÜ */}
