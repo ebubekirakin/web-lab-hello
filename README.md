@@ -1,28 +1,23 @@
-# Web LAB -1 - Hello Project
-2
-3 ## Hakkinda
-4 Bu proje , Web Tasarimi ve Programlama dersi LAB -1 kapsaminda
-5 Vite + React + TypeScript kullanilarak olusturulmustur.
-6
-7 ## Gelistirici
-8 - **Ad Soyad :** [Ebubekir AKIN]
-9 - ** Ogrenci No:** [230541132]
-10
-11 ## Kullanilan Teknolojiler
-12 - React 18
-13 - TypeScript
-14 - Vite
-15
-16 ## Kurulum
-17 ```bash
-18 npm install
-19 ```
-20
-21 ## Calistirma
-22 ```bash
-23 npm run dev
-24 ```
-25 Tarayicida http :// localhost :5173 adresini ac.
-26
-27 ## Ekran Goruntusu
-28 ()
+# Web LAB-3 - Modern CSS ve Responsive Tasarım
+
+## Hakkında
+Bu proje, Web Tasarımı ve Programlama dersi LAB-3 kapsamında, LAB-2'de oluşturulan iskeletin Modern CSS kullanılarak mobil, tablet ve masaüstü cihazlara tam uyumlu (responsive) hale getirilmesi amacıyla geliştirilmiştir.
+
+## Geliştirici
+- **Ad Soyad:** Ebubekir AKIN
+- **Öğrenci No:** 230541132
+
+## Öğrenilen Kavramlar ve Teknolojiler
+- CSS Değişkenleri (Design Tokens) ve Merkezi Yönetim
+- Akıcı Tipografi (Fluid Typography)
+- Flexbox (Navigasyon ve Yetenek etiketleri)
+- CSS Grid (Proje kartları için ızgara sistemi)
+- Responsive Design (Mobile-First stratejisi ve Media Queries)
+
+## Kurulum
+npm install
+
+## Çalıştırma
+npm run dev
+
+Tarayıcıda http://localhost:5173 adresini açarak görüntüleyebilirsiniz.
