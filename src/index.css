@@ -2,6 +2,9 @@
 
 @import "tailwindcss";
 
+/* Dark mode için özel varyantı tanımlıyoruz */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #1e3a8a;
   --color-secondary: #2563eb;
