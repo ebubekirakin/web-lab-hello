@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Kişisel Portföy",
+    "description": "React, TypeScript ve Tailwind CSS ile hazırlanan tam kapsamlı kişisel web sitesi.",
+    "tech": ["React", "TypeScript", "Tailwind CSS"],
+    "year": 2026,
+    "category": "frontend",
+    "featured": true,
+    "image": "/proje1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Yapay Zeka Analiz Aracı",
+    "description": "Python tabanlı, veri setlerini inceleyen ve görselleştiren modern yazılım projesi.",
+    "tech": ["Python", "Pandas", "Matplotlib"],
+    "year": 2025,
+    "category": "data-science",
+    "featured": true,
+    "image": "/proje2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Bileşen Kütüphanesi",
+    "description": "Kendi oluşturduğum Button, Input, Card ve Alert bileşenlerinden oluşan UI Kit.",
+    "tech": ["React", "Tailwind CSS", "Framer Motion"],
+    "year": 2026,
+    "category": "frontend",
+    "featured": false,
+    "image": "/proje1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Su Kalitesi Monitörü",
+    "description": "Arduino tabanlı, su kirliliğini anlık tespit eden donanım projesi.",
+    "tech": ["Arduino", "C++", "Sensörler"],
+    "year": 2025,
+    "category": "hardware",
+    "featured": false,
+    "image": "/proje2.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Siber Güvenlik Simülasyonu",
+    "description": "EV şarj istasyonlarına yönelik FDI saldırılarını simüle eden ve tespit eden sistem.",
+    "tech": ["Python", "Machine Learning", "Network Security"],
+    "year": 2025,
+    "category": "security",
+    "featured": true,
+    "image": "/proje1.jpg"
+  }
+]
